@@ -42,7 +42,7 @@
   --violet:#9d7bff;      --violet-rgb:157,123,255;
   --magma:#ff6d5a;
   --amber:#ffb454;       --amber-rgb:255,180,84;
-  --green:#5de383;
+  --green:#5de383;        --green-rgb:93,227,131;
 
   --btn-primary-text:#04231f;
   --card-hover-shadow:0 12px 40px rgba(0,0,0,.45),0 0 0 1px rgba(var(--accent-rgb),.06);
@@ -69,7 +69,7 @@
   --violet:#7050d8;      --violet-rgb:112,80,216;
   --magma:#e2543f;
   --amber:#c07a15;       --amber-rgb:192,122,21;
-  --green:#17954f;
+  --green:#17954f;       --green-rgb:23,149,79;
 
   --btn-primary-text:#ffffff;
   --card-hover-shadow:0 14px 34px rgba(23,36,47,.12),0 2px 6px rgba(23,36,47,.06);
@@ -273,6 +273,22 @@ h2{font-size:clamp(1.45rem,3vw,1.9rem);font-weight:800;letter-spacing:-.01em}
 .b-year{color:var(--blue);border:1px solid rgba(var(--blue-rgb),.35);background:rgba(var(--blue-rgb),.07)}
 .b-journal{color:var(--violet);border:1px solid rgba(var(--violet-rgb),.35);background:rgba(var(--violet-rgb),.07)}
 .b-status{color:var(--amber);border:1px solid rgba(var(--amber-rgb),.35);background:rgba(var(--amber-rgb),.07)}
+.b-platform{color:var(--green);border:1px solid rgba(var(--green-rgb),.35);background:rgba(var(--green-rgb),.07)}
+.b-count{color:var(--green);border:1px solid rgba(var(--green-rgb),.35);background:rgba(var(--green-rgb),.07);display:inline-flex;align-items:center;gap:.3rem}
+.cert-link{
+  font-family:var(--mono);font-size:.72rem;color:var(--accent);text-decoration:none;
+  border-bottom:1px dashed rgba(var(--accent-rgb),.5);
+  display:inline-flex;align-items:center;gap:.32rem;
+}
+.cert-link:hover{color:var(--blue);border-color:currentColor}
+.cert-link svg{width:13px;height:13px;flex:0 0 auto}
+/* ---------- peer-review ---------- */
+.pr-card{display:flex;flex-direction:column;justify-content:space-between;gap:.7rem}
+.pr-journal{font-size:.98rem;font-weight:700;color:var(--txt);line-height:1.35}
+.pr-platform{font-family:var(--mono);font-size:.74rem;color:var(--green);letter-spacing:.04em;display:inline-flex;align-items:center;gap:.4rem;margin-top:.1rem}
+.pr-platform::before{content:"◈";color:var(--green)}
+.pr-meta{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+.pr-count{font-family:var(--mono);font-size:.7rem;color:var(--txt-faint);margin-top:.4rem}
 .doi-link{
   font-family:var(--mono);font-size:.72rem;color:var(--accent);text-decoration:none;
   border-bottom:1px dashed rgba(var(--accent-rgb),.5);
@@ -411,6 +427,7 @@ footer{
         <a href="#interests">interests</a>
         <a href="#education">education</a>
         <a href="#publications">publications</a>
+        <a href="#peer-review">peer review</a>
         <a href="#experience">experience</a>
         <a href="#projects">projects</a>
         <a href="#skills">skills</a>
@@ -544,9 +561,31 @@ footer{
   </div>
 </section>
 
+<!-- ================= PEER-REVIEW EXPERIENCE ================= -->
+<section id="peer-review" class="reveal">
+  <div class="sec-head"><span class="sec-num">// 04</span><h2>Peer-Review Experience</h2><span class="sec-rule"></span></div>
+  <div class="grid-2">
+    <div class="card pr-card">
+      <div>
+        <p class="pr-journal">Scientific Reports</p>
+        <p class="pr-platform">Springer Nature</p>
+      </div>
+      <div class="pr-meta">
+        <span class="badge b-year">2026</span>
+        <span class="badge b-count">×1 peer review</span>
+        <!-- ▼ Replace the # below with the URL of your Springer Nature peer-review certificate -->
+        <a class="cert-link" href="#" target="_blank" rel="noopener" title="Peer-Review Certificate">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          Certificate
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= EXPERIENCE ================= -->
 <section id="experience" class="reveal">
-  <div class="sec-head"><span class="sec-num">// 04</span><h2>Experience</h2><span class="sec-rule"></span></div>
+  <div class="sec-head"><span class="sec-num">// 05</span><h2>Experience</h2><span class="sec-rule"></span></div>
 
   <p class="subhead">Working Experience</p>
   <div class="card" style="margin-bottom:1rem">
@@ -587,7 +626,7 @@ footer{
 
 <!-- ================= PROJECTS ================= -->
 <section id="projects" class="reveal">
-  <div class="sec-head"><span class="sec-num">// 05</span><h2>Projects</h2><span class="sec-rule"></span></div>
+  <div class="sec-head"><span class="sec-num">// 06</span><h2>Projects</h2><span class="sec-rule"></span></div>
   <div class="grid-2">
 
     <div class="card">
@@ -675,7 +714,7 @@ footer{
 
 <!-- ================= SKILLS ================= -->
 <section id="skills" class="reveal">
-  <div class="sec-head"><span class="sec-num">// 06</span><h2>Skills</h2><span class="sec-rule"></span></div>
+  <div class="sec-head"><span class="sec-num">// 07</span><h2>Skills</h2><span class="sec-rule"></span></div>
   <div class="grid-2">
 
     <!-- -------- SOFTWARE SKILLS -------- -->
@@ -763,7 +802,7 @@ footer{
 
 <!-- ================= LANGUAGE ================= -->
 <section id="language" class="reveal">
-  <div class="sec-head"><span class="sec-num">// 07</span><h2>Language</h2><span class="sec-rule"></span></div>
+  <div class="sec-head"><span class="sec-num">// 08</span><h2>Language</h2><span class="sec-rule"></span></div>
   <div class="card">
     <p style="font-weight:600">English <span style="color:var(--txt-dim);font-weight:400">— IELTS Academic (Date: 19/FEB/2025)</span></p>
     <div class="ielts-score">
@@ -778,7 +817,7 @@ footer{
 
 <!-- ================= AWARDS ================= -->
 <section id="awards" class="reveal">
-  <div class="sec-head"><span class="sec-num">// 08</span><h2>Awards &amp; Honors</h2><span class="sec-rule"></span></div>
+  <div class="sec-head"><span class="sec-num">// 09</span><h2>Awards &amp; Honors</h2><span class="sec-rule"></span></div>
   <div class="grid-2">
     <div class="card award-line">
       <div>
